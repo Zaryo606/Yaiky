@@ -6,11 +6,11 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === 'ping') {
+    if (message.content === '+ping') {
     	message.reply('pong');
   	}
-    if (message.content === 'creator') {
-        message.reply('I was created by Zaryo#8635');
+    if (message.content === '+creator') {
+        message.channel.send('I was created by Zaryo#8635');
     }
 });
 
