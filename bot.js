@@ -9,6 +9,9 @@ client.on('message', message => {
     if (message.content === 'ping') {
     	message.reply('pong');
   	}
+    if (message.content === 'creator') {
+        message.reply('I was created by Zaryo#8635');
+    }
 });
 
 // THIS  MUST  BE  THIS  WAY
