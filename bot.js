@@ -9,8 +9,8 @@ client.on('message', message => {
     if (message.content === '+ping') {
     	message.reply('pong');
   	}
-    if (message.content === '+creator') {
-        message.channel.send('I was created by Zaryo#8635');
+    if (command === '+creator') {
+    const m = await message.channel.send('I was created by Zaryo#8635');
     }
 });
 
